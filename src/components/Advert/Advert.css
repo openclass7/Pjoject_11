@@ -12,10 +12,11 @@
     position: relative;
 }
 .advert-title{
-    position: "absolute";
+  
+    position: absolute;
     bottom: 5px;
     left: 25px;
-    color: "white";
+    color: white;
     font-size: 25px;
 
 }

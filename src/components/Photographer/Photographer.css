@@ -5,3 +5,13 @@
         color: white;
         padding: 0px 20px;
 }
+.photographer-detail-container{
+        display: flex;
+        width: 100%;
+}
+.photographer-detail-container > div {
+        width: 50%;
+      }
+.photographer-detail-container p {
+text-align: start;
+}

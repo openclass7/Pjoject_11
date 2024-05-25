@@ -33,13 +33,6 @@ function Photographer() {
       return (
         <>
           <Detail
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              width: "100%",
-              margin: "40px 0",
-            }}
             id={item.id}
             photo={item.host.picture}
             images={item.pictures.map((picture) => picture)}
@@ -53,22 +46,20 @@ function Photographer() {
               </p>
             ))}
           />
-          <div style={{ display: "flex", width: "100%" }}>
-            <div style={{ width: " 50%" }}>
+          <div className="photographer-detail-container">
+            <div>
               <Selection
                 id={item.id}
                 norm={"Description"}
                 content={item.description}
               />
             </div>
-            <div style={{ width: " 50%" }}>
+            <div>
               <Selection
                 key={item.id}
                 norm={"Équipments"}
                 content={item.equipments.map((equipment) => (
-                  <p style={{ textAlign: "start" }} key={item.id}>
-                    {equipment}
-                  </p>
+                  <p key={item.id}>{equipment}</p>
                 ))}
               />
             </div>

@@ -1,7 +1,7 @@
 
 import "../App.css";
 import Home from "./Home/Home";
-import APropos from "./APropos";
+import APropos from "./APropos/APropos";
 import Photographer from "./Photographer/Photographer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error404 from "./404/404";
