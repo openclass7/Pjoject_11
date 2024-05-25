@@ -1,23 +1,11 @@
 import { Link } from "react-router-dom";
+import "./Advert.css";
 function Advert(Props) {
   return (
-    <div
-      style={{
-        background: `url(${Props.cover})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        objectFit: "cover", // Recadre/étire l'image pour couvrir tout le container
-        margin: "10px",
-        marginBottom: "50px",
-        width: "27%",
-        height: "340px",
-        padding: "10px",
-        borderRadius: "15px",
-        position: "relative",
-      }}
+    <div className="advert-container"  
+    style={{ backgroundImage: `url(${Props.cover})` }}
     >
-      <p
+      <p className="advert-title"
         style={{
           position: "absolute",
           bottom: "5px",

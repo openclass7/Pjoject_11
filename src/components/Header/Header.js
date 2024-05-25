@@ -1,25 +1,20 @@
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
+import "./Header.css";
 import { Link } from "react-router-dom";
 
 function Header({ children }) {
   return (
     <header>
-      <div
-        style={{
-          padding: "2rem 2.5rem",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+      <div className="header-container">
+      
         <div>
           <img src={logo} alt="logo" />
         </div>
-        <nav style={{ display: "flex", justifyContent: "space-between" }}>
+        <nav className="nav-bar">
           <p>
-            <Link to="/">Accueil</Link>
+            <Link to="/" style={{ textDecoration: "none" }}>Accueil</Link>
           </p>
-          <p style={{ marginLeft: "30px", color: "black" }}>
+          <p className=" nav-bar-item">
             <Link to="/about" style={{ textDecoration: "none" }}>
               A Propos
             </Link>

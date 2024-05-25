@@ -1,0 +1,25 @@
+.advert-container{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 27%;
+    height: 340px;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+.advert-title{
+    position: "absolute";
+    bottom: 5px;
+    left: 25px;
+    color: "white";
+    font-size: 25px;
+
+}
+.advert-item{
+    color: white;
+    text-decoration: none;
+}

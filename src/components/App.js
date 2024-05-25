@@ -1,6 +1,6 @@
 
 import "../App.css";
-import Home from "./Home";
+import Home from "./Home/Home";
 import APropos from "./APropos";
 import Photographer from "./Photographer/Photographer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

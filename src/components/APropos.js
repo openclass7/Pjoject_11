@@ -1,6 +1,6 @@
-import Header from "./Header";
+import Header from "./Header/Header";
 import headerAccueil from "../assets/headerAPropos.png";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import Selection from "./Selection/Selection";
 import AProposData from "../Data/AProposData.json";
 
