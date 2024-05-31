@@ -1,17 +1,20 @@
-.tag-container{
-        background-color:  #FF6060;
-        text-align: center;
-        border-radius: 15px;
-        color: white;
-        padding: 0px 20px;
+.tag-container {
+  background-color: #FF6060;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  padding: 0px 20px;
 }
-.photographer-detail-container{
-        display: flex;
-        width: 100%;
+
+.photographer-detail-container {
+  display: flex;
+  width: 100%;
 }
+
 .photographer-detail-container > div {
-        width: 50%;
-      }
-.photographer-detail-container p {
-text-align: start;
+  width: 50%;
 }
+
+.photographer-detail-container p {
+  text-align: start;
+}/*# sourceMappingURL=Photographer.css.map */

@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./404.css";
+import "./404.scss";
 export default function Error404() {
   return (
     <>

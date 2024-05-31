@@ -1,80 +1,85 @@
-.detail-container{
-    margin: auto;
-    text-align: center
-}
-.detail-img{
-    width: 95%;
-    height: 415px;
-    object-fit: cover;
-    border-radius: 15px;
+.detail-container {
+  margin: auto;
+  text-align: center;
 }
 
-.detail-content{
-    font-family: "Montserrat";
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 39px;
+.detail-img {
+  width: 95%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
 }
 
-.host-detail{
-    display: flex;
-    flex-direction: row;
+.detail-content {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 39px;
 }
-.host-detail p{ 
-    width: min-content;
-    margin-right: 10px;
-}
-.picture-host img{
-   
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid ;
 
+.host-detail {
+  display: flex;
+  flex-direction: row;
 }
-.tagAndRating{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 39px;
+
+.host-detail p {
+  width: -moz-min-content;
+  width: min-content;
+  margin-right: 10px;
 }
-.tag{
-    display: flex;
-     gap: 0.5rem;    
+
+.picture-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid;
+}
+
+.tagAndRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 39px;
+}
+
+.tag {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .rating {
-    display: flex;
-    place-items: center;
+  display: flex;
+  place-items: center;
 }
+
 /* //******************************* */
 .carousel {
-    position: relative;
-  }
-  
-  .carousel-inner {
-    position: relative;
-  }
-  
-  .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    font-size: 76px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 30px;
-  }
-  
-  .next {
-    right: 30px;
-  }
-  
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  font-size: 76px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 30px;
+}
+
+.next {
+  right: 30px;
+}/*# sourceMappingURL=Detail.css.map */

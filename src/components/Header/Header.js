@@ -1,8 +1,8 @@
 import logo from "../../assets/logo.png";
-import "./Header.css";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 
-function Header({ children }) {
+function Header({ children,activeLink, }) {
   return (
     <header>
       <div className="header-container">
@@ -12,10 +12,10 @@ function Header({ children }) {
         </div>
         <nav className="nav-bar">
           <p>
-            <Link to="/" style={{ textDecoration: "none" }}>Accueil</Link>
+            <Link to="/" style={{ textDecoration: activeLink==='home'?'underline':'none' }}>Accueil</Link>
           </p>
           <p className=" nav-bar-item">
-            <Link to="/about" style={{ textDecoration: "none" }}>
+            <Link to="/about" style={{ textDecoration: activeLink==='about'?'underline':'none' }}>
               A Propos
             </Link>
           </p>

@@ -3,7 +3,7 @@ import headerAccueil from "../../assets/headerAPropos.png";
 import Footer from "../Footer/Footer";
 import Selection from "../Selection/Selection";
 import AProposData from "../../Data/AProposData.json";
-import "./APropos.css";
+import "./APropos.scss";
 
 function APropos() {
   console.log(AProposData);
@@ -14,7 +14,7 @@ function APropos() {
 
   return (
     <div>
-      <Header>
+      <Header activeLink="about">
         <div className="APropos-header">
           <img src={headerAccueil} alt="App headerAccueil" />
         </div>

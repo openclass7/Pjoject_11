@@ -1,4 +1,4 @@
-import "./Selection.css";
+import "./Selection.scss";
 import { useState } from "react";
 
 function Selection(Props) {

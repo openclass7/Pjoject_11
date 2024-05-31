@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Advert.css";
+import "./Advert.scss";
 function Advert(Props) {
   return (
     <div

@@ -1,0 +1,60 @@
+renommer certains components, pour les rendre plus lisibles.Collapse.fr pour carousel
+Gallery.js
+rendre le site responsif 
+appropos et accueil souligné, un logique ou pas 
+numeroration images carousel (logique plus affichage)
+animation css pour arrow
+
+
+//////////////
+header.scss .header-container{
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content : space-between;
+    align-items:  center;
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    height: 68px;
+     // Media query pour les petits écrans
+  @media (max-width: 768px) {
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    // flex-direction: column; // Empiler les éléments en colonne sur les petits écrans
+  align-items: flex-start; // Aligner les éléments à gauche
+  }
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 309px;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    height: 34px;
+    align-items: center;
+      // Media query pour les petits écrans
+
+  @media (max-width: 768px) {
+    max-width: none; // Supprimer la largeur maximale pour les petits écrans
+    width: 100%; // Occuper toute la largeur disponible
+    justify-content:flex-end; // Répartir les éléments de manière égale
+    margin-top: 1rem; // Ajouter un peu d'espace entre le logo et la navigation
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 17.11px;
+text-align: right;
+
+  }
+}
+.nav-bar-item{
+    margin-left: 30px;
+    color:green;
+     // Media query pour les petits écrans
+  @media (max-width: 768px) {
+    // margin-left: 0; // Supprimer la marge à gauche pour les petits écrans
+  }
+}

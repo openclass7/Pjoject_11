@@ -2,12 +2,12 @@ import headerAccueil from "../../assets/headerAccueil.png";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
-import "./Home.css";
+import "./Home.scss";
 
 function Home() {
   return (
     <>
-      <Header>
+      <Header activeLink="home">      
         <div className="home-container">
           <img
             className="header-image"

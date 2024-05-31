@@ -1,4 +1,4 @@
-import "./Detail.css";
+import "./Detail.scss";
 import { FaStar } from "react-icons/fa";
 import { SlArrowLeft } from "react-icons/sl";
 
@@ -39,18 +39,19 @@ function Detail(props) {
         <SlArrowRight className="carousel-control next" onClick={handleNext} />
       </div>
 
-      <div className="detail-content">
-        <div>
-          <h1>{props.title}</h1>
-          <p>{props.location} </p>
-        </div>
-        <div className=" host-detail">
-          <p>{props.name}</p>
+      <div className="detail-content" >
+            <div className="detail-info" >
+              <h1>{props.title}</h1>
+              <p>{props.location} </p>
+            </div>
 
-          <div className="picture-host">
-            <img src={props.photo} alt="pictur host" />
-          </div>
-        </div>
+              <div className=" host-detail" >
+                        <p>{props.name}</p>
+
+                        <div className="picture-host">
+                          <img src={props.photo} alt="pictur host" />
+                        </div>
+              </div>
       </div>
 
       <div className="tagAndRating">

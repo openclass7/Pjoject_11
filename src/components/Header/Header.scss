@@ -1,0 +1,68 @@
+// .header-container{
+//     padding: 2rem 2.5rem;
+//     display: flex;
+//     justify-content : space-between;
+//     align-items:  center;
+// }
+// .nav-bar{
+//     display: flex;
+//     justify-content: space-between;
+// }
+// .nav-bar-item{
+//     margin-left: 30px;
+//     color:#000000;
+// }
+.header-container {
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 100%; // Remplacez 1240px par 100% pour une largeur maximale adaptative
+    // width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    height: 68px;
+  
+    // Media query pour les petits écrans
+    @media (max-width: 768px) {
+      padding: 1rem;
+      height: auto;
+    //   flex-direction: column; // Empiler les éléments en colonne sur les petits écrans
+      align-items: flex-start; // Aligner les éléments à gauche
+    }
+  }
+  
+  .nav-bar {
+    display: flex;
+   justify-content: space-between;
+  
+   
+    max-width: 309px;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    height: 34px;
+    align-items: center;
+  
+    // Media query pour les petits écrans
+    @media (max-width: 768px) {
+      max-width: none; // Supprimer la largeur maximale pour les petits écrans
+      width: 100%; // Occuper toute la largeur disponible
+    //   justify-content: space-between; // Répartir les éléments de manière égale  
+      justify-content:flex-end;
+      gap: 26px;
+      margin-top: 1rem; // Ajouter un peu d'espace entre le logo et la navigation
+    }
+  }
+  
+  .nav-bar-item {
+    margin-left: 30px;
+    color: green;
+  
+    // Media query pour les petits écrans
+    @media (max-width: 768px) {
+      margin-left: 0; // Supprimer la marge à gauche pour les petits écrans
+      
+    }
+  }
+  

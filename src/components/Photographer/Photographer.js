@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import UseLogements from "../Hooks/UseLogements";
 import Selection from "../Selection/Selection";
-import "./Photographer.css";
+import "./Photographer.scss";
 
 import { useParams, Navigate } from "react-router-dom";
 
@@ -70,7 +70,7 @@ function Photographer() {
 
     return (
       <>
-        <Header />
+        <Header className="photographer-header" />
         {photographerShow}
 
         <Footer />

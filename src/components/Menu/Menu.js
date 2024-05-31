@@ -1,7 +1,7 @@
 import Advert from "../Advert/Advert";
 
 import UseLogements from "../Hooks/UseLogements";
-import "./Menu.css";
+import "./Menu.scss";
 
 function Menu() {
   const logements = UseLogements();

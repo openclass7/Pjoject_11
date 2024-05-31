@@ -1,5 +1,5 @@
 
-import "../App.css";
+import "../App.scss";
 import Home from "./Home/Home";
 import APropos from "./APropos/APropos";
 import Photographer from "./Photographer/Photographer";
