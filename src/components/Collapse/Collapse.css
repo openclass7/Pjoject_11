@@ -34,10 +34,10 @@
   transition: all 3s ease-in-out;
 }
 
-.selection-container {
+.collapse-container {
   padding: 30px 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}/*# sourceMappingURL=Selection.css.map */
+}/*# sourceMappingURL=Collapse.css.map */

@@ -1,28 +1,22 @@
-import Advert from "../Advert/Advert";
+import Card from "../Card/Card";
 
 import UseLogements from "../Hooks/UseLogements";
-import "./Menu.scss";
+import "./Gallery.scss";
 
-function Menu() {
+function Gallery() {
   const logements = UseLogements();
   const appartementShow = logements.map((item) => {
     return (
-      <Advert 
+      <Card
         id={item.id}
         key={item.id}
         title={item.title}
         cover={item.cover}
-        className="menu-item"
+        className="gallery-item"
       />
     );
   });
 
-  return (
-    <div className="menu"
-     
-    >
-      {appartementShow}
-    </div>
-  );
+  return <div className="gallery">{appartementShow}</div>;
 }
-export default Menu;
+export default Gallery;

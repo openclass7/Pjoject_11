@@ -8,7 +8,7 @@ import Detail from "../Detail/Detail";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import UseLogements from "../Hooks/UseLogements";
-import Selection from "../Selection/Selection";
+import Collapse from "../Collapse/Collapse";
 import "./Photographer.scss";
 
 import { useParams, Navigate } from "react-router-dom";
@@ -48,14 +48,14 @@ function Photographer() {
           />
           <div className="photographer-detail-container">
             <div>
-              <Selection
+              <Collapse
                 id={item.id}
                 norm={"Description"}
                 content={item.description}
               />
             </div>
             <div>
-              <Selection
+              <Collapse
                 key={item.id}
                 norm={"Équipments"}
                 content={item.equipments.map((equipment) => (

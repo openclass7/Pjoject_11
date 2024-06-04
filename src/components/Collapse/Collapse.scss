@@ -1,16 +1,20 @@
 .norm{
     display: flex;
     justify-content: space-between;
-    padding: 12px 5px; border-radius: 5px;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
     margin: 0px;
     background-color:#FF6060;
     color: rgb(255, 255, 255);
     cursor: pointer;
     width: 100%;
-    font-size: 24px;
-    text-align: center;
-    font-family: 'montserrat';
-    
+    max-width: 1023px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;    
 }
 .hidden{
     display: none;
@@ -20,7 +24,7 @@
     bottom: 20px;
     font-size: 18px;
     font-weight: 400;
-    line-height: 25.67px;
+    line-height: 26px;
     text-align: left;
     padding: 12px 25px;
     border-radius: 5px;
@@ -28,11 +32,15 @@
     background-color:#f6f6f673;
     cursor: pointer;
     width: 100%;
-    text-align: center;  
-    transition: all 3s ease-in-out;;
+    max-width: 1023px;
+    transition: all 3s ease-in-out;
+    text-align: start;
+    padding: 20px 15px;
 }
-.selection-container{
-    padding: 30px 2.5rem;
+.content p{
+    margin: 0px;
+}
+.collapse-container{
     display: flex;
     justify-content: center;
     align-items: center;

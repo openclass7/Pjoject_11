@@ -1,13 +1,13 @@
 import headerAccueil from "../../assets/headerAccueil.png";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
+import Gallery from "../Gallery/Gallery";
 import Footer from "../Footer/Footer";
 import "./Home.scss";
 
 function Home() {
   return (
     <>
-      <Header activeLink="home">      
+      <Header activeLink="home">
         <div className="home-container">
           <img
             className="header-image"
@@ -17,7 +17,7 @@ function Home() {
           <p className="header-text">Chez vous, partout et ailleurs </p>
         </div>
       </Header>
-      <Menu />
+      <Gallery />
       <Footer />
     </>
   );

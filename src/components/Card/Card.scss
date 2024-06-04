@@ -5,21 +5,18 @@
     object-fit: cover;
     margin: 10px;
     margin-bottom: 50px;
-    // width: 27%;
     width: 335px;
     height: 340px;
     padding: 10px;
     border-radius: 10px;
     position: relative;
 }
-.advert-title{
-  
+.advert-title{  
     position: absolute;
     bottom: 5px;
     left: 25px;
     color: white;
     font-size: 25px;
-
 }
 .advert-item{
     color: white;
@@ -27,4 +24,14 @@
     font-size: 18px;
     font-weight: 700;
     font-family: 'Montserrat';
+}
+
+@media (max-width: 833px) {
+    .advert-container {
+        margin: 0px;
+        margin-bottom: 50px;
+        width:100%;    
+        padding: 0px;
+        border-radius: 10px;       
+    }
 }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./Advert.scss";
-function Advert(Props) {
+import "./Card.scss";
+function Card(Props) {
   return (
     <div
       className="advert-container"
@@ -14,4 +14,4 @@ function Advert(Props) {
     </div>
   );
 }
-export default Advert;
+export default Card;

@@ -1,4 +1,4 @@
-.menu {
+.gallery {
   background: " #F6F6F6";
   height: auto;
   display: flex;
@@ -13,6 +13,6 @@
   padding: 50px 0px;
 }
 
-.menu-item {
+.gallery-item {
   margin: 40px 0px;
-}/*# sourceMappingURL=Menu.css.map */
+}/*# sourceMappingURL=Gallery.css.map */

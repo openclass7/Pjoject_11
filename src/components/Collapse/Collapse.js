@@ -1,7 +1,7 @@
-import "./Selection.scss";
+import "./Collapse.scss";
 import { useState } from "react";
 
-function Selection(Props) {
+function Collapse(Props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -9,7 +9,7 @@ function Selection(Props) {
 
   return (
     <>
-      <div className="selection-container">
+      <div className="collapse-container">
         <div className="norm">
           {Props.norm}
           <i
@@ -26,4 +26,4 @@ function Selection(Props) {
     </>
   );
 }
-export default Selection;
+export default Collapse;
