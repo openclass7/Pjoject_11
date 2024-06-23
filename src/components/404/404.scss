@@ -1,70 +1,81 @@
-.error-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-}
 
-.error-container :nth-child(1){
-    font-family: Montserrat;
+  
+  // Définition des variables
+$primary-color: #FF6060;
+$font-family: 'Montserrat', sans-serif;
+$desktop-width: 768px;
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  :nth-child(1) {
+    font-family: $font-family;
     font-size: 288px;
     font-weight: 700;
     line-height: 411px;
     text-align: center;
-    color: #FF6060;
-    margin: 0px ;
+    color: $primary-color;
+    margin: 0;
     width: 597px;
     height: 263px;
     margin-bottom: 140px;
-}
-.error-container :nth-child(2){
-    font-family: Montserrat;
+  }
+
+  :nth-child(2) {
+    font-family: $font-family;
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
-    color: #FF6060;
-    width: 872px;
-    height: 51px;  
-    margin-bottom: 100px;  
+    color: $primary-color;
+    max-width: 872px;
+    width: 80%;
+    height: 51px;
+    margin-bottom: 100px;
     text-align: center;
-}
-.error-container :nth-child(3){
-    font-family: Montserrat;
+  }
+
+  :nth-child(3) {
+    font-family: $font-family;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 100px;
     text-align: center;
+  }
 }
 
+@media (max-width: $desktop-width) {
+  .error-container {
+    padding-top: 50px;
 
-@media (max-width: 768px) {
-    .error-container{       
-        padding-top: 50px;
+    :nth-child(1) {
+      width: 198px;
+      height: 99px;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 137px;
+      margin-bottom: 140px;
     }
-    
-    .error-container :nth-child(1){
-        width: 198px;
-        height: 99px;
-        font-size: 96px;
-        font-weight: 700;
-        line-height: 137px;
-        margin-bottom: 140px;
+
+    :nth-child(2) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      width: 260px;
+      height: 52px;
+      margin-bottom: 100px;
     }
-    .error-container :nth-child(2){
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 26px;
-        width: 260px;
-        height: 52px;
-        margin-bottom: 100px;  
-    }
-    .error-container :nth-child(3){
-        width: 221px;
-        height: 20px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;   
+
+    :nth-child(3) {
+      width: 221px;
+      height: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
     }
   }
+}

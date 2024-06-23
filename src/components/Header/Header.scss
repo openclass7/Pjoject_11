@@ -1,59 +1,70 @@
 
-.header-container {
-    padding: 50px 0px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-      width: 90%;
-    max-width: 1240px;
-    margin: auto;
-    height: 68px;
-  
-    // Media query pour les petits écrans
-    @media (max-width: 768px) {
-      padding: 1rem;
-      height: auto;
-       align-items: flex-start;
-    }
-  }
-  .header-container img{
-    @media (max-width: 768px) {
-      width: 145px;
-      height: 46.88px;
-      gap: 0px;
-    }
 
+$desktop-width: 1240px;
+$tablet-width: 768px;
+$header-padding: 50px 0;
+$header-height: 68px;
+$nav-bar-width: 309px;
+$nav-bar-font-size: 24px;
+$nav-bar-font-weight: 500;
+$nav-bar-height: 34px;
+$nav-bar-item-margin: 30px;
+
+.header-container {
+  padding: $header-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: $desktop-width;
+  margin: auto;
+  height: $header-height;
+
+  // Media query pour les petits écrans
+  @media (max-width: $tablet-width) {
+    padding: 1rem;
+    height: auto;
+    align-items: flex-start;
   }
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;  
-    font-family: Montserrat;
-    max-width: 309px;
-    color: black;
-    font-size: 24px;
-    font-weight: 500;
-    height: 34px;
-    align-items: center;
-  
-    // Media query pour les petits écrans
-    @media (max-width: 768px) {
-      
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 28px;
-      text-align: right;
-      gap: 26px;
-      align-items: baseline;
-      
-    }
+}
+
+.header-container img {
+  @media (max-width: $tablet-width) {
+    width: 145px;
+    height: 46.88px;
+    gap: 0;
   }
-  
-  .nav-bar-item {
-    margin-left: 30px;
-    // Media query pour les petits écrans
-    @media (max-width: 768px) {
-      margin-left: 0; // Supprimer la marge à gauche pour les petits écrans
-      
-    }
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  max-width: $nav-bar-width;
+  color: black;
+  font-size: $nav-bar-font-size;
+  font-weight: $nav-bar-font-weight;
+  height: $nav-bar-height;
+  align-items: center;
+
+  // Media query pour les petits écrans
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    font-weight: $nav-bar-font-weight;
+    line-height: 28px;
+    text-align: right;
+    gap: 26px;
+    align-items: baseline;
   }
+}
+
+.nav-bar-item {
+  margin-left: $nav-bar-item-margin;
+
+  // Media query pour les petits écrans
+  @media (max-width: $tablet-width) {
+    margin-left: 0; // Supprimer la marge à gauche pour les petits écrans
+  }
+}
+
   

@@ -1,3 +1,16 @@
+
+validateur 
+changer fontsize à 12px footer version mobile 
+animation css pour arrow , voir figma 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+
 .home-container {
     text-align: center;
     margin: auto;
@@ -28,7 +41,7 @@ Gallery.js
 rendre le site responsif 
 appropos et accueil souligné, un logique ou pas 
 numeroration images carousel (logique plus affichage)
-animation css pour arrow
+
 
 
 //////////////

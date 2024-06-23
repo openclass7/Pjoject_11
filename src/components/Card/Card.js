@@ -3,11 +3,11 @@ import "./Card.scss";
 function Card(Props) {
   return (
     <div
-      className="advert-container"
+      className="card-container"
       style={{ backgroundImage: `url(${Props.cover})` }}
     >
-      <p className="advert-title">
-        <Link className="advert-item" to={`/photographer/${Props.id}`}>
+      <p className="card-title">
+        <Link className="card-item" to={`/photographer/${Props.id}`}>
           {Props.title}
         </Link>
       </p>

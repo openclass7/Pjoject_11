@@ -1,35 +1,54 @@
-.tag-container{
-        background-color:  #FF6060;
-        text-align: center;
-        border-radius: 10px;
-        color: white;
-        padding: 0px 20px;
-        font-family: Montserrat;
-        font-weight: 700;
-        font-size: 14px;
-        height: 25px;
-}
-.photographer-detail-container{
-        display: flex;
-        width: 90%;
-        max-width: 1240px;
-        margin: auto;
-        gap: 76px;
-}
-.photographer-detail-container > div {
-        width: 50%;
-      }
-.photographer-detail-container p {
-        text-align: start;
+
+
+
+// Définition des variables
+$primary-color: #FF6060;
+$white-color: #fff;
+$font-family: 'Montserrat', sans-serif;
+$font-weight-bold: 700;
+$font-size-small: 14px;
+$border-radius: 10px;
+$max-width: 1240px;
+$gap: 76px;
+$mobile-gap: 20px;
+
+// Styles pour le conteneur des tags
+.tag-container {
+  background-color: $primary-color;
+  text-align: center;
+  border-radius: $border-radius;
+  color: $white-color;
+  padding: 0 20px;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  height: 25px;
 }
 
-@media (max-width: 768px) {
-        .photographer-detail-container {
-                display: flex;
-                gap: 20px;
-                flex-direction: column;
-            }
-            .photographer-detail-container > div {
-                width: 100%;
-            }
+// Styles pour le conteneur des détails du photographe
+.photographer-detail-container {
+  display: flex;
+  width: 90%;
+  max-width: $max-width;
+  margin: auto;
+  gap: $gap;
+
+  & > div {
+    width: 50%;
+  }
+
+  p {
+    text-align: start;
+  }
+
+  // Styles pour les écrans de petite taille
+  @media (max-width: 768px) {
+    display: flex;
+    gap: $mobile-gap;
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+  }
 }

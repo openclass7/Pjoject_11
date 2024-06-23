@@ -1,4 +1,4 @@
-.advert-container {
+.card-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.advert-title {
+.card-title {
   position: absolute;
   bottom: 5px;
   left: 25px;
@@ -21,7 +21,7 @@
   font-size: 25px;
 }
 
-.advert-item {
+.card-item {
   color: white;
   text-decoration: none;
 }/*# sourceMappingURL=Card.css.map */

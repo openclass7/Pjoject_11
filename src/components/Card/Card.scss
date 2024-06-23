@@ -1,37 +1,58 @@
-.advert-container{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    margin: 10px;
-    margin-bottom: 50px;
-    width: 335px;
-    height: 340px;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-}
-.advert-title{  
-    position: absolute;
-    bottom: 5px;
-    left: 25px;
-    color: white;
-    font-size: 25px;
-}
-.advert-item{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Montserrat';
+
+
+
+// Variables
+$primary-color: white; // Couleur primaire
+$secondary-color: #FF6060; // Couleur secondaire
+$font-family: 'Montserrat', sans-serif; // Police de caractères
+$font-size-base: 16px; // Taille de police de base
+$font-weight-bold: 700; // Graisse de police pour le gras
+$border-radius: 10px; // Rayon des bordures arrondies
+$margin-base: 10px; // Marge de base
+$margin-bottom: 35px; // Marge inférieure
+$card-width: 335px; // Largeur de la carte
+$card-height: 340px; // Hauteur de la carte
+
+// Styles pour le conteneur de la carte
+.card-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: $margin-base;
+  margin-bottom: $margin-bottom;
+  width: $card-width;
+  height: $card-height;
+  padding: $margin-base;
+  border-radius: $border-radius;
+  position: relative;
 }
 
+// Styles pour le titre de la carte
+.card-title {
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+  color: $primary-color;
+  font-size: 25px;
+}
+
+// Styles pour le lien de la carte
+.card-item {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: $font-size-base + 2px; // 18px
+  font-weight: $font-weight-bold;
+  font-family: $font-family;
+}
+
+// Styles pour les écrans de petite taille
 @media (max-width: 833px) {
-    .advert-container {
-        margin: 0px;
-        margin-bottom: 50px;
-        width:100%;    
-        padding: 0px;
-        border-radius: 10px;       
-    }
+  .card-container {
+    margin: 0;
+    margin-bottom: $margin-bottom;
+    width: 100%;
+    padding: 0;
+    border-radius: $border-radius;
+  }
 }
