@@ -1,18 +1,28 @@
 .gallery {
-  background: " #F6F6F6";
+  background: #F6F6F6;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  width: 95%;
-  margin: auto;
-  margin-top: 30px;
-  border-radius: 15px;
-  padding: 50px 0px;
+  width: 90%;
+  max-width: 1240px;
+  margin: 43px auto 0;
+  border-radius: 25px;
+  padding: 35px 0;
 }
-
 .gallery-item {
-  margin: 40px 0px;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .gallery-item {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 833px) {
+  .gallery {
+    padding: 0;
+    background-color: white;
+  }
 }/*# sourceMappingURL=Gallery.css.map */

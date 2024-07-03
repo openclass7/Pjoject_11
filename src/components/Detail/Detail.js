@@ -67,7 +67,7 @@ function Detail(props) {
             {[...Array(5)].map((star, i) => (
               <FaStar
                 className="star"
-                key={i}
+                key={`${i}-{star}`}
                 color={i < props.rating ? "gold" : "gray"}
                 size={24}
               />

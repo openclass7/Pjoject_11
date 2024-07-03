@@ -5,11 +5,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin: 10px;
-  margin-bottom: 50px;
-  width: 27%;
+  margin-bottom: 35px;
+  width: 335px;
   height: 340px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -24,4 +24,17 @@
 .card-item {
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 833px) {
+  .card-container {
+    margin: 0;
+    margin-bottom: 35px;
+    width: 100%;
+    padding: 0;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=Card.css.map */

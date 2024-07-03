@@ -1,7 +1,4 @@
-
-
-
-$background-color: #F6F6F6;
+$background-color: #f6f6f6;
 $max-width: 1240px;
 $margin-top: 43px;
 $border-radius: 25px;
@@ -12,29 +9,29 @@ $small-screen-margin-vertical: 20px;
 $medium-screen-max-width: 833px;
 
 .gallery {
-    background: $background-color;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%; // Utiliser une largeur en pourcentage pour s'adapter à la taille de l'écran
-    max-width: $max-width; // Définir une largeur maximale pour les grands écrans
-    margin: $margin-top auto 0; // Centrer horizontalement
-    border-radius: $border-radius;
-    padding: $padding-vertical 0;
+  background: $background-color;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%; // Utiliser une largeur en pourcentage pour s'adapter à la taille de l'écran
+  max-width: $max-width;
+  margin: $margin-top auto 0; // Centrer horizontalement
+  border-radius: $border-radius;
+  padding: $padding-vertical 0;
 
-    &-item {
-        margin: $margin-vertical 0;
+  &-item {
+    margin: $margin-vertical 0;
 
-        @media (max-width: $small-screen-max-width) {
-            margin: $small-screen-margin-vertical 0; // Réduire la marge verticale sur les petits écrans
-        }
+    @media (max-width: $small-screen-max-width) {
+      margin: $small-screen-margin-vertical 0; // Réduire la marge verticale sur les petits écrans
     }
+  }
 
-    @media (max-width: $medium-screen-max-width) {
-        padding: 0;
-        background-color: white;
-    }
+  @media (max-width: $medium-screen-max-width) {
+    padding: 0;
+    background-color: white;
+  }
 }

@@ -14,12 +14,12 @@ function Collapse(Props) {
           {Props.norm}
           <i
             onClick={toggleOpen}
-            className={
-              isOpen ? "fa-solid fa-chevron-down" : "fa-solid fa-chevron-up"
-            }
+            className={`chevron fa-solid fa-chevron-up ${
+              isOpen ? "rotate" : ""
+            }`}
           ></i>
         </div>
-        <div className={` ${isOpen ? "content" : "hidden"} `}>
+        <div className={` ${isOpen ? "content" : "hidden"} content-transition`}>
           {Props.content}
         </div>
       </div>

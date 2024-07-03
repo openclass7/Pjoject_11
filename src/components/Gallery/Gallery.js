@@ -1,10 +1,10 @@
 import Card from "../Card/Card";
 
-import UseLogements from "../Hooks/UseLogements";
+import useLogements from "../Hooks/useLogements";
 import "./Gallery.scss";
 
 function Gallery() {
-  const logements = UseLogements();
+  const logements = useLogements();
   const appartementShow = logements.map((item) => {
     return (
       <Card

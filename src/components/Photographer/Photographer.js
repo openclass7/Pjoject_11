@@ -1,13 +1,13 @@
 /**
 * Le composant `Photographer` affiche les détails d'un photographe spécifique, y compris sa photo de profil, ses images, son titre, son lieu, son nom, sa note et ses tags. Il affiche également la description du photographe et les détails de son équipement.
 
-* Le composant utilise le hook `UseLogements` pour récupérer la liste des logements disponibles, puis filtre cette liste pour trouver le logement qui correspond au paramètre `photographerId` de l'URL. Si le `photographerId` n'est pas trouvé dans la liste des logements, le composant redirige vers la page 404.
+* Le composant utilise le hook `useLogements` pour récupérer la liste des logements disponibles, puis filtre cette liste pour trouver le logement qui correspond au paramètre `photographerId` de l'URL. Si le `photographerId` n'est pas trouvé dans la liste des logements, le composant redirige vers la page 404.
 */
 
 import Detail from "../Detail/Detail";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import UseLogements from "../Hooks/UseLogements";
+import useLogements from "../Hooks/useLogements";
 import Collapse from "../Collapse/Collapse";
 import "./Photographer.scss";
 
@@ -18,7 +18,7 @@ function Photographer() {
 
   const photographerId = params.photographerId;
 
-  const logements = UseLogements();
+  const logements = useLogements();
 
   const photographer = logements.filter((item) => item.id === photographerId);
 
@@ -31,9 +31,10 @@ function Photographer() {
 
     const photographerShow = photographer.map((item) => {
       return (
-        <>
+        <div key={item.id}>
           <Detail
             id={item.id}
+            key={`${item.id}-detail`}
             photo={item.host.picture}
             images={item.pictures.map((picture) => picture)}
             title={item.title}
@@ -46,7 +47,10 @@ function Photographer() {
               </p>
             ))}
           />
-          <div className="photographer-detail-container">
+          <div
+            className="photographer-detail-container"
+            key={`${item.id}-collapse`}
+          >
             <div>
               <Collapse
                 id={item.id}
@@ -56,15 +60,14 @@ function Photographer() {
             </div>
             <div>
               <Collapse
-                key={item.id}
                 norm={"Équipments"}
                 content={item.equipments.map((equipment) => (
-                  <p key={item.id}>{equipment}</p>
+                  <p key={`${item.id}-${equipment}`}>{equipment}</p>
                 ))}
               />
             </div>
           </div>
-        </>
+        </div>
       );
     });
 

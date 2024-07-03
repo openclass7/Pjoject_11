@@ -1,17 +1,14 @@
-
-
-
 // Variables
-$primary-color: white; // Couleur primaire
-$secondary-color: #FF6060; // Couleur secondaire
-$font-family: 'Montserrat', sans-serif; // Police de caractères
-$font-size-base: 16px; // Taille de police de base
-$font-weight-bold: 700; // Graisse de police pour le gras
-$border-radius: 10px; // Rayon des bordures arrondies
-$margin-base: 10px; // Marge de base
-$margin-bottom: 35px; // Marge inférieure
-$card-width: 335px; // Largeur de la carte
-$card-height: 340px; // Hauteur de la carte
+$primary-color: white;
+$secondary-color: #ff6060;
+$font-family: "Montserrat", sans-serif;
+$font-size-base: 16px;
+$font-weight-bold: 700;
+$border-radius: 10px;
+$margin-base: 10px;
+$margin-bottom: 35px;
+$card-width: 335px;
+$card-height: 340px;
 
 // Styles pour le conteneur de la carte
 .card-container {

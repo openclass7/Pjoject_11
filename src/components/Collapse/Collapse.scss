@@ -1,13 +1,10 @@
-// 
-
-
 // Couleurs
-$primary-color: #FF6060;
+$primary-color: #ff6060;
 $secondary-color: #f6f6f6;
 $text-color: #fff;
 
 // Polices
-$font-family: 'Montserrat', sans-serif;
+$font-family: "Montserrat", sans-serif;
 
 // Tailles de police
 $font-size-sm: 18px;
@@ -20,54 +17,61 @@ $padding-lg: 20px 15px;
 $border-radius: 5px;
 
 .norm {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $padding-sm;
-    border-radius: $border-radius;
-    margin: 0;
-    background-color: $primary-color;
-    color: $text-color;
-    cursor: pointer;
-    width: 100%;
-    max-width: 1023px;
-    font-family: $font-family;
-    font-size: $font-size-sm;
-    font-weight: 700;
-    line-height: $line-height;
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-sm;
+  border-radius: $border-radius;
+  margin: 0;
+  background-color: $primary-color;
+  color: $text-color;
+  cursor: pointer;
+  width: 100%;
+  max-width: 1023px;
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  line-height: $line-height;
+  text-align: left;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .content {
-    font-family: $font-family;
-    bottom: 20px;
-    font-size: $font-size-sm;
-    font-weight: 400;
-    line-height: $line-height;
-    text-align: left;
-    padding: $padding-md;
-    border-radius: $border-radius;
-    margin: 0;
-    background-color: rgba($secondary-color, 0.45);
-    cursor: pointer;
-    width: 100%;
-    max-width: 1023px;
-    transition: all 3s ease-in-out;
-    text-align: start;
-    padding: $padding-lg;
+  font-family: $font-family;
+  bottom: 20px;
+  font-size: $font-size-sm;
+  font-weight: 400;
+  line-height: $line-height;
+  text-align: left;
+  padding: $padding-md;
+  border-radius: $border-radius;
+  margin: 0;
+  background-color: rgba($secondary-color, 0.45);
+  cursor: pointer;
+  width: 100%;
+  max-width: 1023px;
+  transition: all 3s ease-in-out;
+  text-align: start;
+  padding: $padding-lg;
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 .collapse-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chevron {
+  transition: transform 0.3s ease-in-out; // Ajoute une transition de 0.3 seconde avec une accélération/décélération
+}
+.chevron.rotate {
+  transform: rotate(180deg);
 }

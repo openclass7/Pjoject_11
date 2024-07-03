@@ -1,13 +1,27 @@
 .footer {
   background: black;
   color: white;
-  padding: 40px;
+  padding: 66px;
   padding-bottom: 7px;
   text-align: center;
   margin-top: 40px;
 }
-
-.logoFooter {
-  width: 80px;
+.footer p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+  text-align: center;
+}
+.footer .logoFooter {
+  width: 122px;
+  height: 40px;
   color: white;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

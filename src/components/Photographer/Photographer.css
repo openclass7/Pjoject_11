@@ -1,20 +1,35 @@
 .tag-container {
   background-color: #FF6060;
   text-align: center;
-  border-radius: 15px;
-  color: white;
-  padding: 0px 20px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  height: 25px;
 }
 
 .photographer-detail-container {
   display: flex;
-  width: 100%;
+  width: 90%;
+  max-width: 1240px;
+  margin: auto;
+  gap: 76px;
 }
-
 .photographer-detail-container > div {
   width: 50%;
 }
-
 .photographer-detail-container p {
   text-align: start;
+}
+@media (max-width: 768px) {
+  .photographer-detail-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .photographer-detail-container > div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Photographer.css.map */

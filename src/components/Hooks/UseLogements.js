@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-function UseLogements() {
+function useLogements() {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch('/logements.json')
+    fetch("/logements.json")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('HTTP error, status = ' + response.status);
+          throw new Error("HTTP error, status = " + response.status);
         }
         return response.json();
       })
@@ -15,6 +15,6 @@ function UseLogements() {
   }, []);
 
   return logements;
-};
+}
 
-export default UseLogements;
+export default useLogements;
