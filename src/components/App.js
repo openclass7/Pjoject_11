@@ -1,4 +1,3 @@
-import "../App.scss";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Photographer from "./Photographer/Photographer";
