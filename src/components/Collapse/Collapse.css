@@ -54,7 +54,4 @@
   transition: transform 1s ease-in-out;
 }
 
-.content-transition {
-  transition: max-height 1s ease-in-out;
-  overflow: hidden;
-}/*# sourceMappingURL=Collapse.css.map */
+

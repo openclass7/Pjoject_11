@@ -19,7 +19,7 @@ function Collapse(Props) {
             }`}
           ></i>
         </div>
-        <div className={` ${isOpen ? "content" : "hidden"} content-transition`}>
+        <div className={` ${isOpen ? "content" : "hidden"} `}>
           {Props.content}
         </div>
       </div>
